@@ -26,3 +26,7 @@ Now give the access key and secret key and region and format in json.
 
 ![Screenshot 2024-11-20 223427](https://github.com/user-attachments/assets/3b182151-6d1d-4e63-a221-82ab0b4f9e3a)
 
+
+![Screenshot 2024-11-21 001110](https://github.com/user-attachments/assets/4f984f5c-7ff0-4401-a0de-2633972a4d5f)
+
+
