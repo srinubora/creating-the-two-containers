@@ -28,8 +28,16 @@ Now give the access key and secret key and region and format in json.
 Create the s3 bucket by using below command 
 
 aws s3api create-bucket --bucket bucketname --region us-east-1
+![Screenshot 2024-11-20 234357](https://github.com/user-attachments/assets/d4bff695-a74b-440d-879d-2a63d92753c3)
 
 Files inside the s3 bucket
+
+Enable the s3 versioning
+
+aws s3api put-bucket-versioning --bucket bucketname --versioning-configuration Status=Enabled
+
+Export the s3 by using command
+export kops_state_store=s3://kopsbucket
 
 ![Screenshot 2024-11-21 001110](https://github.com/user-attachments/assets/4f984f5c-7ff0-4401-a0de-2633972a4d5f)
 
