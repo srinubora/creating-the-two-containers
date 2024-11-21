@@ -48,6 +48,7 @@ object also created in s3 buckek
 ![Screenshot 2024-11-21 001110](https://github.com/user-attachments/assets/4f984f5c-7ff0-4401-a0de-2633972a4d5f)
 automatically ec2 instace created master nods and worker nodes
 ![Screenshot 2024-11-19 235930](https://github.com/user-attachments/assets/4e2d3526-5707-4414-98bf-0031fc6f94ba)
+#creating yaml file inside the two pods cration
 
 vi pod.yml
 
@@ -78,7 +79,6 @@ spec:
       command: ["sh", "-c", "while true; do echo 'welcome to skywaves'; sleep 10; done"]
       
 :wq!
-
 
 ![Screenshot 2024-11-21 095130](https://github.com/user-attachments/assets/e069fa9d-6151-4527-94a8-34841738c87c)
 
