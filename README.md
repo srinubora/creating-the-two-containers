@@ -39,6 +39,11 @@ aws s3api put-bucket-versioning --bucket bucketname --versioning-configuration S
 Export the s3 by using command
 export kops_state_store=s3://kopsbucket
 
+object also created in s3 buckek
+
 ![Screenshot 2024-11-21 001110](https://github.com/user-attachments/assets/4f984f5c-7ff0-4401-a0de-2633972a4d5f)
+automatically ec2 instace created master nods and worker nodes
+![Screenshot 2024-11-19 235930](https://github.com/user-attachments/assets/4e2d3526-5707-4414-98bf-0031fc6f94ba)
+
 
 
