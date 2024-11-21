@@ -1,15 +1,15 @@
-# with a single pod and using kops we can craete the containers
-	create the ec2 instance in ubuntu in t2 medium.
+# with a single pod and using kops we can craete the containers  
+create the ec2 instance in ubuntu in t2 medium.
 
-	Change the server into root,update the server
+Change the server into root,update the server
 
-	Install the docker and kubectl
+Install the docker and kubectl
 
 chmod +x kubectl to excute and persmison
 
-	move the kubectl file by using mv kubectl /usr/local/bin command
+move the kubectl file by using mv kubectl /usr/local/bin command
 ![Screenshot 2024-11-20 215405](https://github.com/user-attachments/assets/9e0d5c1c-cbc3-4c2e-8708-118b40eb8f3a)
-	Installing the kops by using below command
+Installing the kops by using below command
 
 curl -Lo kops https://github.com/kubernetes/kops/releases/download/$ (curl -s https://api.github.com/repos/kubernetes/kops/releases/latest | grep tag_name | cut -d '"' -f 4)/kops-linux-amd64
 ![Screenshot 2024-11-20 220321](https://github.com/user-attachments/assets/9ab57729-4239-4765-9f8e-100e8720d4f0)	
@@ -44,6 +44,41 @@ object also created in s3 buckek
 ![Screenshot 2024-11-21 001110](https://github.com/user-attachments/assets/4f984f5c-7ff0-4401-a0de-2633972a4d5f)
 automatically ec2 instace created master nods and worker nodes
 ![Screenshot 2024-11-19 235930](https://github.com/user-attachments/assets/4e2d3526-5707-4414-98bf-0031fc6f94ba)
+
+vi pod.yml
+
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: kops-pod
+  
+spec:
+
+  containers:
+  
+    - name: vinu12
+    
+      image: nginx
+      
+      ports:
+      
+      - containerPort: 80
+      
+    - name: vinod12
+    
+      image: ubuntu
+      
+      command: ["sh", "-c", "while true; do echo 'welcome to skywaves'; sleep 10; done"]
+      
+:wq!
+
+kubectl apply -f pod.yml
+
+kubectl get pod
+
 
 
 
