@@ -17,6 +17,10 @@ Execute the .bashrc by using source .bashrc command
 
 vi .bashrc
 
+given path here
+
+export path=$path:/usr/bin/local
+
 ![Screenshot 2024-11-20 221156](https://github.com/user-attachments/assets/9d245e48-6ddf-4f41-b322-43d6314e170c)
 Create the IAM user and add the administrator policies to that user.
 
@@ -25,7 +29,7 @@ Configure the AWS CLI by using aws configure command.
 Now give the access key and secret key and region and format in json.
 
 ![Screenshot 2024-11-20 223427](https://github.com/user-attachments/assets/3b182151-6d1d-4e63-a221-82ab0b4f9e3a)
-Create the s3 bucket by using below command 
+Create the s3 bucket 
 
 aws s3api create-bucket --bucket bucketname --region us-east-1
 ![Screenshot 2024-11-20 234357](https://github.com/user-attachments/assets/d4bff695-a74b-440d-879d-2a63d92753c3)
