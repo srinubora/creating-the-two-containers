@@ -59,7 +59,7 @@ spec:
 
   containers:
   
-    - name: vinu12
+    - name: gani70
     
       image: nginx
       
@@ -67,7 +67,7 @@ spec:
       
       - containerPort: 80
       
-    - name: vinod12
+    - name: gani70
     
       image: ubuntu
       
@@ -75,9 +75,9 @@ spec:
       
 :wq!
 
-kubectl apply -f pod.yml
 
-kubectl get pod
+![Screenshot 2024-11-21 095130](https://github.com/user-attachments/assets/e069fa9d-6151-4527-94a8-34841738c87c)
+
 
 
 
